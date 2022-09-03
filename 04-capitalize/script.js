@@ -8,12 +8,12 @@
 
 function capitalize(str) {
     const strToArr = str.split(` `);
-    for(let i = 0; i <= strToArr.length - 1; i++) {
-        const capLetter = [strToArr[i][0].toUpperCase() + strToArr[i].slice(1)];
-        console.log(capLetter);
-        }};
-    
-    
+    for (let i = 0; i <= strToArr.length - 1; i++) {
+        const capitalizedWord = strToArr[i].slice(0, 1).toUpperCase() + strToArr[i].slice(1);
+        strToArr[i] = capitalizedWord; };
+        return strToArr.join(` `);
+};
+
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 
