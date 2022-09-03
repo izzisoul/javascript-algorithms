@@ -9,20 +9,12 @@
  *
 */
 
-const vowels = ['а', 'я', 'о', 'ё', 'у', 'ю', 'ы', 'и', 'э', 'е'];
-function findVowels(str) {
-    const word = Array.from(str);
-    console.log(word);
-    for(let i = 0; i <= vowels.length - 1; i++) {
-        console.log(word.includes(vowels[i]));
-    }
-    
-}
-findVowels('здравствуй');
-
-function findVowels(str) {
-    // Напишите код здесь
-}
+    function findVowels(str) {
+    const strLower = str.toLowerCase();
+    const strToArr = strLower.split(``);
+    const vowelsNum = strToArr.filter(v => v === 'а' || v === 'я' ||  v === 'о' || v === 'ё' || v === 'у' || v === 'ю' || v === 'ы' || v === 'и' || v === 'э' || v === 'е');
+    return vowelsNum.length;
+    };
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 
